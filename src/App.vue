@@ -68,6 +68,7 @@ export default {
 
 <template>
   <AppHeader />
+  <AppMain />
 </template>
 
 <style>
@@ -89,6 +90,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Utils */

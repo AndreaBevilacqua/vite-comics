@@ -35,10 +35,10 @@ section {
 ul {
     display: flex;
     gap: 50px;
-}
 
-ul li {
-    padding: 50px 0;
+    li {
+        padding: 50px 0;
+    }
 }
 
 li.active,

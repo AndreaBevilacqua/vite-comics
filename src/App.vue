@@ -1,7 +1,8 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
-import AppMain from './components/AppMain.vue'
+import AppHeader from './components/AppHeader.vue';
+import AppFooterTop from './components/AppFooterTop.vue';
+import AppFooterBot from './components/AppFooterBot.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
   data: () => ({
@@ -60,7 +61,8 @@ export default {
   }),
   components: {
     AppHeader,
-    AppFooter,
+    AppFooterTop,
+    AppFooterBot,
     AppMain
   }
 }
@@ -69,6 +71,8 @@ export default {
 <template>
   <AppHeader />
   <AppMain />
+  <AppFooterTop />
+  <AppFooterBot />
 </template>
 
 <style>

@@ -40,7 +40,7 @@ export default {
 
 .bottom-main {
     background-color: #0282F9;
-    padding: 4rem;
+    padding: 3.5rem;
     color: white;
     font-size: 2rem;
 }

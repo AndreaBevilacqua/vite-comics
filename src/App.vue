@@ -66,7 +66,9 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+</template>
 
 <style>
 /* Reset */
@@ -81,9 +83,20 @@ export default {
 
 body {
   max-height: 100vh;
+  background-color: lightgray;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Utils */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
 ul li {
   text-decoration: none;

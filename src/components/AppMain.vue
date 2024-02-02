@@ -10,7 +10,7 @@ export default {
         </section>
         <div class="top-main">
             <div class="container">
-                <p>Contenuto</p>
+                <button>LOAD MORE</button>
             </div>
         </div>
         <div class="bottom-main">
@@ -32,23 +32,36 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+/* TOP-MAIN */
 .top-main {
     background-color: #1C1C1C;
     padding: 3rem;
     color: white;
     font-size: 2rem;
+    text-align: center;
+
+    button {
+        padding: 0.8rem 3rem;
+        background-color: #0282F9;
+        outline: none;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
 }
 
+
+/* BOTTOM-MAIN */
 .bottom-main {
     background-color: #0282F9;
     padding: 3.5rem;
     color: white;
     font-size: 2rem;
-}
 
-img {
-    height: 3rem;
+    img {
+        height: 3rem;
+    }
 }
 
 ul {

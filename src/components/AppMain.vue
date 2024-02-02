@@ -14,9 +14,9 @@ export default {
         </section>
         <div class="top-main">
             <div class="container card-container">
-                <ComicCard />
-                <button>LOAD MORE</button>
+                <ComicCard v-for="(comic, i) in comics" :key="i" :title="comic.series" :image="comic.thumb" />
             </div>
+            <button>LOAD MORE</button>
         </div>
         <div class="bottom-main">
             <div class="container">
@@ -44,6 +44,7 @@ export default {
     padding: 3rem;
     color: white;
     font-size: 2rem;
+    text-align: center;
 
     button {
         padding: 0.8rem 3rem;
@@ -53,6 +54,7 @@ export default {
         color: white;
         font-weight: bold;
         margin-top: 2rem;
+        cursor: pointer;
     }
 }
 
@@ -62,7 +64,10 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
-    justify-content: center;
+
+    .comic-card {
+        flex-basis: calc(100% / 6);
+    }
 }
 
 
@@ -72,10 +77,6 @@ export default {
     padding: 3.5rem;
     color: white;
     font-size: 2rem;
-
-    img {
-        height: 3rem;
-    }
 }
 
 ul {

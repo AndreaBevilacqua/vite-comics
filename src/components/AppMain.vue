@@ -6,6 +6,8 @@ export default {
 
 <template>
     <main>
+        <section id="jumbotron">
+        </section>
         <div class="top-main">
             <div class="container">
                 <p>Contenuto</p>
@@ -65,5 +67,11 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+#jumbotron {
+    height: 400px;
+    background-color: red;
+    background-image: url(../assets/img/jumbotron.jpg);
 }
 </style>

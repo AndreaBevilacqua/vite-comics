@@ -6,52 +6,52 @@ export default {
             {
                 text: 'Characters',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'Comics',
                 url: '#',
-                current: true,
+                active: true,
             },
             {
                 text: 'Movies',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'TV',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'Games',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'Collectibles',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'Videos',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'Fans',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'News',
                 url: '#',
-                current: false,
+                active: false,
             },
             {
                 text: 'Shop',
                 url: '#',
-                current: false,
+                active: false,
             },
         ]
     }),
@@ -64,7 +64,8 @@ export default {
             <img src="../assets/img/dc-logo.png" alt="dc-logo">
             <div id="navbar">
                 <ul>
-                    <li v-for="link in links"><a :href="link.url" :class="{ current: link.current }"></a>{{ link.text }}
+                    <li v-for="link in links"><a :href="link.url" :class="{ active: link.active }"></a>{{
+                        link.text }}
                     </li>
                 </ul>
             </div>

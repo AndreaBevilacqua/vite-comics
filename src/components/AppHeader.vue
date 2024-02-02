@@ -64,7 +64,8 @@ export default {
             <img src="../assets/img/dc-logo.png" alt="dc-logo">
             <div id="navbar">
                 <ul>
-                    <li v-for="link in links"><a href="#"></a>{{ link.text }}</li>
+                    <li v-for="link in links"><a :href="link.url" :class="{ current: link.current }"></a>{{ link.text }}
+                    </li>
                 </ul>
             </div>
         </section>
